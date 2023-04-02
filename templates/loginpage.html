@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portal 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link  rel="stylesheet" href="{{ url_for('static', filename='css/custom.css')}}">
+</head>
+<body>
+    <div class="container-fluid" >
+        <div class="col-sm-3">
+		</div>
+        <div class="col-sm-6">
+            <!-- Articles -->
+            <div class="row">
+                <article class="col-xs-12">
+                    <h1>Crop Recommendation System</h1>
+                    <p>Please Login to use the recommendation system</p>
+                </article>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-log-in"></span> 
+                        Sign In
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form action="/verification" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="uid" name="uid" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-default">Log In</button>
+                    </form>
+                </div>
+            </div>
+           <div class="panel panel-default">
+               
+        </div>
+
+    </div>
+    
+</body>
+</html>
